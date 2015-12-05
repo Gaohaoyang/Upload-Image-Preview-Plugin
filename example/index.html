@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Upload-Preview-Plugin</title>
+    <script src="../jquery-2.1.4.min.js"></script>
+    <script src="../jquery.upload_preview.js"></script>
+</head>
+
+<body>
+    <form>
+
+        <div id="previewArea" class="hy-upload-preview">
+            <input id="imgInput" name="web_logo" type="file" accept="image/gif, image/jpeg, image/png">
+            <span>点击选择图片</span>
+            <div class="up_again">
+                点击重新
+                <br>选择图片
+            </div>
+        </div>
+        <h1 class="aaa">aaaaaaaaa</h1>
+    </form>
+
+    <script type="text/javascript">
+        $('hy-upload-preview').uploadPreview();
+        // $('.aaa').uploadPreview({
+        //     'color': 'green',
+        //     'fontSize':'20px'
+        // }).fadeOut('slow');
+    </script>
+</body>
+
+</html>
