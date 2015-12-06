@@ -1,15 +1,17 @@
 // sass --watch src/upload_preview.scss:src/upload_preview.css --style compressed
 
 .hy-upload-preview {
+    font-size: 16px;
     width: 200px;//-------------
     height: 200px;//----------------
     border-radius: 5px;
     position: relative;
     overflow: hidden;
     background-color: #eee;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
 
     span {
         display: block;
@@ -27,29 +29,8 @@
         opacity: 0;
         -ms-filter: "alpha(opacity=0)";
         cursor: pointer;
-
-        &:hover+.black_mask {
-            // opacity: 1;
-            -ms-filter: "alpha(opacity=20)";
-        }
     }
 
-    /*  .black_mask {
-         position: absolute;
-         z-index: 198;
-         background-color: #000;
-         opacity: 0;
-         -ms-filter: "alpha(opacity=0)";
-         width: 150px;
-         height: 150px;
-         // color: #000;
-
-         // &:hover {
-         //     // background-color: red;
-         //     opacity: 0.2;
-         //     -ms-filter: "alpha(opacity=20)";
-         // }
-     } */
     .up_again {
         display: table-cell;
         vertical-align: middle;
@@ -62,11 +43,12 @@
         -moz-transition: 0.3s ease-in-out; /* Firefox 4 */
         -webkit-transition: 0.3s ease-in-out; /* Safari 和 Chrome */
         -o-transition: 0.3s ease-in-out;
+        line-height: 1.6;
     }
     &:hover {
         .up_again {
             opacity: 1;
-            background: rgba(0, 0, 0, 0.4);
+            background: rgba(0, 0, 0, 0.5);
         }
     }
 }

@@ -13,7 +13,8 @@
         this.defaults = {
             width: '200px',
             height: '200px',
-            backgroundSize: 'cover' //cover,contain
+            backgroundSize: 'cover', //cover,contain
+            fontSize:'16px'
         };
         this.options = $.extend({}, this.defaults, opt);
     };
@@ -41,8 +42,10 @@
      */
     var _setHTMLnCSS = function(param) {
 
-        $('.hy-upload-preview').append('<span>点击选择图片</span><div class="up_again">点击重新<br>选择图片</div>');
-        $('head').append('<style>.hy-upload-preview{width:' + param.width + ';height:' + param.height + ';border-radius:5px;position:relative;overflow:hidden;background-color:#eee;background-size:' + param.backgroundSize + ';background-repeat:no-repeat;background-position:center}.hy-upload-preview span{display:block;padding:0;line-height:' + param.height + ';text-align:center}.hy-upload-preview input{position:absolute;font-size:2000px;z-index:200;top:0;right:0;opacity:0;-ms-filter:"alpha(opacity=0)";cursor:pointer}.hy-upload-preview input:hover+.black_mask{-ms-filter:"alpha(opacity=20)"}.hy-upload-preview .up_again{display:table-cell;vertical-align:middle;text-align:center;width:' + param.width + ';height:' + param.height + ';opacity:0;color:#fff;transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-webkit-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out}.hy-upload-preview:hover .up_again{opacity:1;background:rgba(0,0,0,0.4)}</style>');
+        // $('.hy-upload-preview').append('<span>点击选择图片</span><div class="up_again">点击重新<br>选择图片</div>');
+        // $('head').append('<style>.hy-upload-preview{width:' + param.width + ';height:' + param.height + ';border-radius:5px;position:relative;overflow:hidden;background-color:#eee;background-size:' + param.backgroundSize + ';background-repeat:no-repeat;background-position:center}.hy-upload-preview span{display:block;padding:0;line-height:' + param.height + ';text-align:center}.hy-upload-preview input{position:absolute;font-size:2000px;z-index:200;top:0;right:0;opacity:0;-ms-filter:"alpha(opacity=0)";cursor:pointer}.hy-upload-preview input:hover+.black_mask{-ms-filter:"alpha(opacity=20)"}.hy-upload-preview .up_again{display:table-cell;vertical-align:middle;text-align:center;width:' + param.width + ';height:' + param.height + ';opacity:0;color:#fff;transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-webkit-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out}.hy-upload-preview:hover .up_again{opacity:1;background:rgba(0,0,0,0.4)}</style>');
+        //
+        // .hy-upload-preview{font-size:16px;width:200px;height:200px;border-radius:5px;position:relative;overflow:hidden;background-color:#eee;background-size:cover;background-repeat:no-repeat;background-position:center}.hy-upload-preview span{display:block;padding:0;line-height:200px;text-align:center}.hy-upload-preview input{position:absolute;font-size:2000px;z-index:200;top:0;right:0;opacity:0;-ms-filter:"alpha(opacity=0)";cursor:pointer}.hy-upload-preview .up_again{display:table-cell;vertical-align:middle;text-align:center;width:200px;height:200px;opacity:0;color:#fff;transition:0.3s ease-in-out;-moz-transition:0.3s ease-in-out;-webkit-transition:0.3s ease-in-out;-o-transition:0.3s ease-in-out;line-height:1.6}.hy-upload-preview:hover .up_again{opacity:1;background:rgba(0,0,0,0.5)}
         /*var stylesheetExists = false;
         $('link').each(function() {
             if ($(this).attr('href') === '../uploadPreview/upload_preview.css') {

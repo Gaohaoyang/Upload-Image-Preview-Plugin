@@ -4,23 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload-Preview-Plugin</title>
-    <!-- <link rel="stylesheet" href="../uploadPreview/upload_preview.css"> -->
+    <link rel="stylesheet" href="../src/upload_preview.css">
     <script src="../jquery-2.1.4.min.js"></script>
 
 </head>
 
 <body>
-    <h1>上传图片预览插件</h1>
+    <h1>上传图片本地预览插件</h1>
 
     <form>
 
         <div class="hy-upload-preview">
             <input type="file" accept="image/gif, image/jpeg, image/png">
+            <span>点击选择图片</span>
+            <div class="up_again">点击重新<br>选择图片</div>
         </div>
 
     </form>
 
-    <script src="../jquery.upload_preview.min.js"></script>
+    <!--<script src="../jquery.upload_preview.min.js"></script>-->
+    <script src="../src/jquery.upload_preview.js"></script>
     <script type="text/javascript">
         $('.hy-upload-preview').uploadPreview({
             width: '300px',
