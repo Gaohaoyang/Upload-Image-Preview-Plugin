@@ -4,7 +4,9 @@ Upload Preview Plugin on Web pages
 
 上传图片本地预览 jQuery 插件
 
+文档稍后补充。。。
 
+I'll finish document later...
 
 ---
 
