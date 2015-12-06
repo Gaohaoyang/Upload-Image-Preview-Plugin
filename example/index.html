@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Upload-Preview-Plugin</title>
-    <link rel="stylesheet" href="../src/upload_preview.css">
+    <!-- <link rel="stylesheet" href="../src/upload_preview.css"> -->
     <script src="../jquery-2.1.4.min.js"></script>
 
 </head>
@@ -14,21 +14,20 @@
 
     <form>
 
-        <div class="hy-upload-preview">
+        <div class="anyName">
             <input type="file" accept="image/gif, image/jpeg, image/png">
-            <span>点击选择图片</span>
-            <div class="up_again">点击重新<br>选择图片</div>
         </div>
 
     </form>
 
-    <!--<script src="../jquery.upload_preview.min.js"></script>-->
-    <script src="../src/jquery.upload_preview.js"></script>
+    <script src="../jquery.upload_preview.min.js"></script>
+    <!-- <script src="../src/jquery.upload_preview.js"></script> -->
     <script type="text/javascript">
-        $('.hy-upload-preview').uploadPreview({
+        $('.anyName').uploadPreview({
             width: '300px',
             height: '200px',
-            backgroundSize: 'cover'
+            backgroundSize: 'cover',
+            fontSize: '16px'
         });
     </script>
 </body>
