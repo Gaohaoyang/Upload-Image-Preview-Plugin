@@ -2,6 +2,10 @@
 
 Upload Preview Plugin on Web pages
 
+上传图片本地预览 jQuery 插件
+
+
+
 ---
 
 关于编写 jQuery 插件，参考了一些教程
