@@ -35,8 +35,9 @@ $('.anyName').uploadPreview({
     height: '200px',
     backgroundSize: 'cover',
     fontSize: '16px',
-    borderRadius:'200px',
-    border:'3px solid #dedede',
+    borderRadius: '200px',
+    border: '3px solid #dedede',
+    lang: 'en', //language
 });
 ```
 
