@@ -11,6 +11,7 @@
 
 <body>
     <h1>上传图片本地预览插件</h1>
+    <h1>The Demo of Upload-Image-Preview-jQuery-Plugin</h1>
 
     <form>
 
@@ -20,16 +21,17 @@
 
     </form>
 
-    <script src="../jquery.upload_preview.min.js"></script>
     <!-- <script src="../src/jquery.upload_preview.js"></script> -->
+    <script src="../jquery.upload_preview.min.js"></script>
     <script type="text/javascript">
         $('.anyName').uploadPreview({
             width: '200px',
             height: '200px',
             backgroundSize: 'cover',
             fontSize: '16px',
-            borderRadius:'200px',
-            border:'3px solid #dedede'
+            borderRadius: '200px',
+            border: '3px solid #dedede',
+            lang: 'en', //language
         });
     </script>
 </body>
