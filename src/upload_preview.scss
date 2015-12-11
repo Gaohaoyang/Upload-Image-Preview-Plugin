@@ -1,10 +1,11 @@
-// sass --watch src/upload_preview.scss:src/upload_preview.css --style compressed
+// sass --watch src/upload_preview.scss:src/upload_preview.css --style compact
 
-.hy-upload-preview {
+.anyName {
     font-size: 16px;
     width: 200px;//-------------
     height: 200px;//----------------
-    border-radius: 5px;
+    border-radius: 200px;//--------------
+    border:3px solid #dedede;//------------
     position: relative;
     overflow: hidden;
     background-color: #eee;
@@ -12,6 +13,9 @@
     background-repeat: no-repeat;
     background-position: center;
 
+    -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
+
+    /* this fixes the overflow:hidden in Chrome/Opera */
 
     span {
         display: block;

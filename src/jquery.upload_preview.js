@@ -3,7 +3,8 @@
  * Date: 2015
  * Email: gaohaoyang126@126.com
  */
-;(function($, window, document, undefined) {
+;
+(function($, window, document, undefined) {
 
     /**
      * Previewer 构造函数
@@ -19,7 +20,9 @@
             width: '200px',
             height: '200px',
             backgroundSize: 'cover', //cover,contain
-            fontSize: '16px'
+            fontSize: '16px',
+            borderRadius: '5px',
+            border:'0'
         };
         this.options = $.extend({}, this.defaults, opt);
     };
@@ -38,6 +41,8 @@
                 height: this.options.height,
                 backgroundSize: this.options.backgroundSize, //cover,contain
                 fontSize: this.options.fontSize,
+                borderRadius: this.options.borderRadius,
+                border:this.options.border,
             }); //设置CSS
             _imgPreview(this.$element, this.$element.children('input'));
             return this.$element;
@@ -61,7 +66,7 @@
 
         //加载 CSS
         $('head').append('<style>' +
-            '.' + className + ' { font-size: ' + param.fontSize + '; width: ' + param.width + '; height: ' + param.height + '; border-radius: 5px; position: relative; overflow: hidden; background-color: #eee; background-size: ' + param.backgroundSize + '; background-repeat: no-repeat; background-position: center; }' +
+            '.' + className + ' { font-size: ' + param.fontSize + '; width: ' + param.width + '; height: ' + param.height + '; border-radius: ' + param.borderRadius + ';border: '+param.border+'; position: relative; overflow: hidden; background-color: #eee; background-size: ' + param.backgroundSize + '; background-repeat: no-repeat; background-position: center; -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);}' +
             '.' + className + ' span { display: block; padding: 0; line-height: ' + param.height + '; text-align: center; }' +
             '.' + className + ' input { position: absolute; font-size: 2000px; z-index: 200; top: 0; right: 0; opacity: 0; -ms-filter: "alpha(opacity=0)"; cursor: pointer; }' +
             '.' + className + ' .up_again { display: table-cell; vertical-align: middle; text-align: center; width: ' + param.width + '; height: ' + param.height + '; opacity: 0; color: #fff; transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out; line-height: 1.6; }' +

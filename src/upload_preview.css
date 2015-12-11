@@ -1,7 +1,7 @@
-.hy-upload-preview { font-size: 16px; width: 200px; height: 200px; border-radius: 5px; position: relative; overflow: hidden; background-color: #eee; background-size: cover; background-repeat: no-repeat; background-position: center; }
-.hy-upload-preview span { display: block; padding: 0; line-height: 200px; text-align: center; }
-.hy-upload-preview input { position: absolute; font-size: 2000px; z-index: 200; top: 0; right: 0; opacity: 0; -ms-filter: "alpha(opacity=0)"; cursor: pointer; }
-.hy-upload-preview .up_again { display: table-cell; vertical-align: middle; text-align: center; width: 200px; height: 200px; opacity: 0; color: #fff; transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out; line-height: 1.6; }
-.hy-upload-preview:hover .up_again { opacity: 1; background: rgba(0, 0, 0, 0.5); }
+.anyName { font-size: 16px; width: 200px; height: 200px; border-radius: 200px; border: 3px solid #dedede; position: relative; overflow: hidden; background-color: #eee; background-size: cover; background-repeat: no-repeat; background-position: center; -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC); /* this fixes the overflow:hidden in Chrome/Opera */ }
+.anyName span { display: block; padding: 0; line-height: 200px; text-align: center; }
+.anyName input { position: absolute; font-size: 2000px; z-index: 200; top: 0; right: 0; opacity: 0; -ms-filter: "alpha(opacity=0)"; cursor: pointer; }
+.anyName .up_again { display: table-cell; vertical-align: middle; text-align: center; width: 200px; height: 200px; opacity: 0; color: #fff; transition: 0.3s ease-in-out; -moz-transition: 0.3s ease-in-out; -webkit-transition: 0.3s ease-in-out; -o-transition: 0.3s ease-in-out; line-height: 1.6; }
+.anyName:hover .up_again { opacity: 1; background: rgba(0, 0, 0, 0.5); }
 
 /*# sourceMappingURL=upload_preview.css.map */
