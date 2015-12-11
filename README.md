@@ -1,6 +1,10 @@
 # Upload-Image-Preview-jQuery-Plugin
 Select upload image, local preview.
 
+## Demo
+
+
+
 ## Usage
 HTML
 
