@@ -25,7 +25,7 @@ put this anyWhere
 </div>
 ```
 
-> Or you can use other way to import jQuery and jQuery plugins, such as webpack, browser
+> Or you can use other way to import jQuery and jQuery plugins, such as webpack, browserify
 
 JavaScript
 
