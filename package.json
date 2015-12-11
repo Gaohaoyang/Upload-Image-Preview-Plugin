@@ -1,6 +1,6 @@
 {
   "name": "upload-image-preview",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "Before you upload image, it's very concise to preview it on local with flat morden UI.",
   "main": "jquery.upload_preview.min.js",
   "directories": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Gaohaoyang/Upload-Preview-Plugin.git"
+    "url": "git+https://github.com/Gaohaoyang/Upload-Image-Preview-Plugin.git"
   },
   "keywords": [
     "jquery-plugin",
