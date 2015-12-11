@@ -1,9 +1,11 @@
 # Upload-Image-Preview-jQuery-Plugin
-Select upload image, local preview.
+Choose upload image, local preview.
 
 ## Demo
 
+[click here to try it](http://gaohaoyang.github.io/Upload-Preview-Plugin/example) or see below ↓
 
+![demo](http://ww1.sinaimg.cn/large/7011d6cfjw1eyvnqhp2v1g20k30eqb2a.gif)
 
 ## Usage
 HTML
@@ -34,7 +36,7 @@ $('.anyName').uploadPreview({
     backgroundSize: 'cover',
     fontSize: '16px',
     borderRadius:'200px',
-    border:'3px solid #dedede'
+    border:'3px solid #dedede',
 });
 ```
 
@@ -50,11 +52,7 @@ borderRadius   | String | '5px'   | border-radius
 border         | String | 0       | the border of preview area
 lang           | String | 'zh-cn' | the language of plugin, now only 'en','zh-cn'
 
-<!-- 上传图片本地预览 jQuery 插件 -->
-
-<!-- 文档稍后补充。。。 -->
-
-<!-- I'll finish document later... -->
+<!-- ## Donate -->
 
 ## license
 
