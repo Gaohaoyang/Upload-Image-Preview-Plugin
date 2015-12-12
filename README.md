@@ -3,7 +3,7 @@ Choose upload image, local preview.
 
 ## Demo
 
-[click here to try it](http://gaohaoyang.github.io/Upload-Preview-Plugin/example) or see below ↓
+[click here to try it](http://gaohaoyang.github.io/Upload-Image-Preview-Plugin/example/) or see below ↓
 
 ![demo](http://ww1.sinaimg.cn/large/7011d6cfjw1eyvnqhp2v1g20k30eqb2a.gif)
 
